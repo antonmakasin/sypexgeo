@@ -40,8 +40,8 @@ class SxGeoServiceProvider extends ServiceProvider
     {
         $this->mergeConfigFrom(__DIR__ . '/../config/sxgeo.php', 'sxgeo');
 
-        $this->app->singleton(SxGeo::class, function ($app) {
-            return new SxGeo($app['config']['sxgeo']['localPath']);
+        $this->app->bind('SxGeo', function ($app) {
+            return new SxGeo(config('sxgeo.localPath'));
         });
     }
 
