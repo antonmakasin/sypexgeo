@@ -1,5 +1,5 @@
 {
-    "name": "eseath/sypexgeo",
+    "name": "antonmakasin/sypexgeo",
     "type": "library",
     "description": "A PHP package for working with the SypexGeo database file.",
     "keywords": ["sypexgeo", "sxgeo", "geoip", "geo", "laravel"],
@@ -10,8 +10,12 @@
     },
     "authors": [
         {
-            "name": "Ruslan A.",
+            "name": "Ruslan A. (real author)",
             "email": "ruslan.a94@yandex.com"
+        },
+        {
+          "name": "Anton Makasin (just some changes)",
+          "email": "anton@makasin.ru"
         }
     ],
     "require": {
@@ -42,5 +46,7 @@
                 "SxGeo": "Eseath\\SxGeo\\Facades\\SxGeo"
             }
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
